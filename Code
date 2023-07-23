@@ -1,0 +1,8 @@
+task.spawn(function()
+    for i,v in next, getgc(true) do
+        if type(v) == "table" and rawget(v, "Damage") then
+            rawset(v, "Clips", _G.Ammo)
+        rawset(v, "ClipSize", _G.Ammo)
+        end
+    end
+end)
